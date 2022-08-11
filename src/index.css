@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply flex flex-col max-w-md border rounded-lg p-5 gap-4
+  }
+
+  .btn-primary {
+    @apply px-3 py-2 rounded-lg ring-1 ring-blue-500 bg-blue-200 text-blue-800
+  }
+}
