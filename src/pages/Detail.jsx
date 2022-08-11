@@ -19,6 +19,7 @@ const Detail = () => {
     setIsConfirm(true);
     setName("");
     setEmail("");
+    window.history.replaceState({}, "");
     // clear {state}
     state = {};
   };
