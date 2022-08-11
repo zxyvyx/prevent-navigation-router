@@ -5,7 +5,7 @@ import usePrompt from "../hooks/usePrompt";
 
 const Detail = () => {
   let navigate = useNavigate();
-  const {state} = useLocation();
+  let {state} = useLocation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [isConfirm, setIsConfirm] = useState(false);
@@ -14,10 +14,13 @@ const Detail = () => {
 
   const confirmPayment = () => {
     // code for processing
+    // ...
     // ----
     setIsConfirm(true);
     setName("");
     setEmail("");
+    // clear {state}
+    state = {};
   };
 
   useEffect(() => {
